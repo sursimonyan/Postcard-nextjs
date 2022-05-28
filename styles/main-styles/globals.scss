@@ -1,2 +1,14 @@
 @import './reset.scss';
 @import './mixins.scss';
+@import './icomoon.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:wght@400;600;800&display=swap');
+
+.container {
+    max-width: 1410px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
