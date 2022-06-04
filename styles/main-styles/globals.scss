@@ -4,6 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:wght@400;600;800&display=swap');
 
+html {
+    font-size: 32px;
+
+    @include xxl {
+        font-size: calc(16px + (32 - 16) * ((100vw - 375px) / (1400 - 375)));
+    }
+}
+
+body {
+    font-family: 'Noto Sans';
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    outline: 0;
+}
+
 .container {
     max-width: 1410px;
     width: 100%;
