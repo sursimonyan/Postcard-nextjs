@@ -1,3 +1,5 @@
+@import '../styles/main-styles/mixins.scss';
+
 .usernav {
     display: flex;
     align-items: center;
@@ -10,16 +12,34 @@
         cursor: pointer;
     }
 
+    &__remove {
+
+        @include sm {
+            
+            & ~ div {
+                display: none;
+            }
+        }
+    }
+
     &__icon {
         margin-block-end: 3px;
-        font-size: 30px;
+        font-size: 0.9375rem;
         color: var(--gray);
+
+        @include lg {
+            font-size: 20px;
+        }
     }
 
     &__text {
         font-size: 0.375rem;
         line-height: 1.25em;
         color: var(--gray);
+
+        @include lg {
+            display: none;
+        }
     }
 
     &__basket {
@@ -37,5 +57,9 @@
         color: var(--white);
         background-color: var(--orange);
         border-radius: 8px;
+    }
+
+    @include lg {
+        column-gap: 20px;
     }
 }

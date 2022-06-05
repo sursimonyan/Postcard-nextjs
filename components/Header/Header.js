@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { useState } from 'react';
+import Link from 'next/link';
 import styles from '../../styles/Header.module.scss';
 import Nav from '../Nav/Nav';
 import UserNav from '../UserNav/UserNav';
@@ -38,9 +39,11 @@ const Header = () => {
             </div>
             <div className={`${styles.header__main} container`}>
                 <div className={styles.header__left}>
-                    <a href="#" className={styles.header__logo}>
-                        <img src="./logo.png" alt="logo" />
-                    </a>
+                    <Link href="/">
+                        <a className={styles.header__logo}>
+                            <img src="./logo.png" alt="logo" />
+                        </a>
+                    </Link>
                     <Nav showSearch={showSearch} />
                 </div>
                 <UserNav showSearch={showSearch} setShowSearch={setShowSearch} logedIn={logedIn} setLogedIn={setLogedIn} />

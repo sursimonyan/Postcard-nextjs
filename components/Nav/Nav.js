@@ -1,21 +1,23 @@
 import cn from 'classnames';
 import Link from 'next/link';
 import styles from '../../styles/Nav.module.scss';
+import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 
-const Nav = ({ showSearch, setShowSearch }) => {
+const Nav = ({ showSearch }) => {
 
     return (
         <>
             <nav className={styles.nav}>
                 <div className={styles.nav__main}>
-                    <span className={styles.nav__all}>
-                        <i class={`${styles.nav__menu_icon} icon-menu-line`}></i>
-                        Բոլոր տեսակները
-                        <i class={`${styles.nav__open_icon} icon-down`}></i>
+                    <span className={`${styles.nav__mobile_menu}`}>
+                        <i className={`${styles.nav__mobile_menu_icon} icon-menu-line`}></i>
                     </span>
-                    <div className={styles.nav__categories}>
-
-                    </div>
+                    <span className={styles.nav__all}>
+                        <i className={`${styles.nav__menu_icon} icon-menu-line`}></i>
+                        Բոլոր տեսակները
+                        <i className={`${styles.nav__open_icon} icon-down`}></i>
+                    </span>
+                    <CategoriesMenu />
                 </div>
                 {
                     !showSearch && (

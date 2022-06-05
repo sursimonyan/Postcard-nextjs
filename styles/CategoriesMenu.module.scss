@@ -1,0 +1,107 @@
+@import './main-styles/mixins.scss';
+
+.categories {
+    position: absolute;
+    top: 69px;
+    max-width: 375px;
+    padding-block-start: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-line);
+    overflow-y: auto;
+    z-index: 9;
+
+    &__top {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-block-end: 18px;
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+
+        @include lg {
+            display: flex;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 1.36em;
+        font-weight: 700;
+        color: var(--blue);
+    }
+
+    &__close {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__list {
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+        padding-block-end: 29px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1.36em;
+        font-weight: 600;
+        color: var(--gray);
+        transition: color 240ms;
+
+        &:after {
+            content: '\e91e';
+            display: none;
+            margin-inline-start: auto;
+            font-family: 'icomoon';
+            font-size: 11px;
+
+            @include lg {
+                display: block;
+            }
+        }
+
+        i {
+            width: 24px;
+            margin-inline-end: 10px;
+            font-size: 24px;
+        }
+
+        &+& {
+            margin-block-start: 20px;
+        }
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--gray-light);
+    }
+
+    &__link {
+        margin-block-end: 20px;
+        font-size: 16px;
+        line-height: 1.36em;
+        font-weight: 700;
+        color: var(--gray);
+    }
+
+    &__contact {
+        font-size: 16px;
+        line-height: 1.36em;
+        font-weight: 700;
+        color: var(--gray);
+    }
+
+    @include lg {}
+
+    @include sm {
+        width: 100%;
+    }
+}

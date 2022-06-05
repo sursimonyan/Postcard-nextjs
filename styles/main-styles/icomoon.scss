@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../public/fonts/icomoon/icomoon.eot?4fw4bt');
-  src:  url('../../public/fonts/icomoon/icomoon.eot?4fw4bt#iefix') format('embedded-opentype'),
-    url('../../public/fonts/icomoon/icomoon.ttf?4fw4bt') format('truetype'),
-    url('../../public/fonts/icomoon/icomoon.woff?4fw4bt') format('woff'),
-    url('../../public/fonts/icomoon/icomoon.svg?4fw4bt#icomoon') format('svg');
+  src:  url('../../public/fonts/icomoon/icomoon.eot?pr4i0o');
+  src:  url('../../public/fonts/icomoon/icomoon.eot?pr4i0o#iefix') format('embedded-opentype'),
+    url('../../public/fonts/icomoon/icomoon.ttf?pr4i0o') format('truetype'),
+    url('../../public/fonts/icomoon/icomoon.woff?pr4i0o') format('woff'),
+    url('../../public/fonts/icomoon/icomoon.svg?pr4i0o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right:before {
+  content: "\e91e";
+  color: #5f6d7c;
+}
 .icon-close:before {
   content: "\e91d";
   color: #5f6d7c;
@@ -69,35 +73,35 @@
   content: "\e905";
   color: #5f6d7c;
 }
-.icon-Icons-tools:before {
+.icon-tools:before {
   content: "\e906";
   color: #5f6d7c;
 }
-.icon-Icone-Home:before {
+.icon-home:before {
   content: "\e907";
   color: #5f6d7c;
 }
-.icon-Icon-techniques:before {
+.icon-techniques:before {
   content: "\e908";
   color: #5f6d7c;
 }
-.icon-Icon-stationery:before {
+.icon-stationery:before {
   content: "\e909";
   color: #5f6d7c;
 }
-.icon-Icon-Sofa:before {
+.icon-sofa:before {
   content: "\e90a";
   color: #5f6d7c;
 }
-.icon-Icon-Perfume:before {
+.icon-Perfume:before {
   content: "\e90b";
   color: #5f6d7c;
 }
-.icon-Icon-jewerly:before {
+.icon-jewerly:before {
   content: "\e90c";
   color: #5f6d7c;
 }
-.icon-Icon-Games-Joyes:before {
+.icon-games-joyes:before {
   content: "\e90d";
   color: #5f6d7c;
 }
@@ -110,31 +114,31 @@
   margin-left: -1.2353515625em;
   color: rgb(0, 99, 189);
 }
-.icon-Icon-food-and-drink:before {
+.icon-food-and-drink:before {
   content: "\e910";
   color: #5f6d7c;
 }
-.icon-Icon-clothes:before {
+.icon-clothes:before {
   content: "\e911";
   color: #0063bd;
 }
-.icon-Icon-cars:before {
+.icon-cars:before {
   content: "\e912";
   color: #5f6d7c;
 }
-.icon-Icon-Brands:before {
+.icon-brands:before {
   content: "\e913";
   color: #5f6d7c;
 }
-.icon-Icon-books:before {
+.icon-books:before {
   content: "\e914";
   color: #5f6d7c;
 }
-.icon-Icon-ball:before {
+.icon-ball:before {
   content: "\e915";
   color: #5f6d7c;
 }
-.icon-Icon-animal:before {
+.icon-animal:before {
   content: "\e916";
   color: #5f6d7c;
 }

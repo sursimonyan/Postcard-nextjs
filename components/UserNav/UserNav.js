@@ -6,7 +6,7 @@ const UserNav = ({ showSearch, logedIn, setShowSearch, setLogedIn }) => {
             {
                 showSearch ? (
                     <div
-                        className={styles.usernav__item}
+                        className={`${styles.usernav__item} ${styles.usernav__remove}`}
                         onClick={() => setShowSearch(false)}
                     >
                         <i className={`${styles.usernav__icon} icon-close`}></i>

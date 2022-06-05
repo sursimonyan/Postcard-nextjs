@@ -1,3 +1,5 @@
+@import '../styles/main-styles/mixins.scss';
+
 .nav {
     display: flex;
     align-items: center;
@@ -5,20 +7,57 @@
     &__main {
         display: flex;
         column-gap: 1.375rem;
+        cursor: pointer;
     }
 
     &__sub {
         display: flex;
         column-gap: 0.9375rem;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    &__mobile_menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: var(--blue);
+        border-radius: 2.4px;
+        cursor: pointer;
+
+        &_icon {
+            margin: auto;
+            font-size: 22px;
+            font-weight: 700;
+
+            &:before {
+                color: var(--white) !important;
+            }
+        }
+
+        @include lg {
+            display: flex;
+        }
     }
 
     &__all {
         display: flex;
         align-items: center;
+        flex-shrink: 0;
+        margin-inline-end: 1.375rem;
         font-size: 0.5rem;
         line-height: 1.25em;
         font-weight: 600;
         color: var(--blue);
+
+        @include lg {
+            display: none;
+        }
     }
 
     &__menu_icon {
@@ -60,8 +99,13 @@
         overflow: hidden;
 
         &.open {
-            position: static;
             transform: scaleX(1);
+        }
+
+        @include lg {
+            max-width: initial;
+            width: calc(100% - 40px);
+            height: 35px; 
         }
     }
 
@@ -80,12 +124,23 @@
         display: flex;
         width: 2.25rem;
         height: 100%;
+        font-size: 0.65625rem;
         background-color: var(--blue);
 
         &:before {
             margin: auto;
-            font-size: 0.65625rem;
             color: var(--white) !important;
+
+            @include lg {
+                color: var(--gray-line) !important;
+            }
+        }
+
+        @include lg {
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            background-color: transparent;
         }
     }
 }
