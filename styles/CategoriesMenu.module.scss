@@ -170,6 +170,7 @@
 .submenu {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     max-width: 930px;
     column-gap: 0.5rem;
     width: 29.0625rem;
