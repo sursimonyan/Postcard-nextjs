@@ -20,18 +20,20 @@ const Nav = ({ showSearch }) => {
             <nav className={styles.nav}>
                 <div
                     className={styles.nav__main}
-                    onClick={openCloseMenu}
                     ref={wrapperRef}
                 >
                     <span className={`${styles.nav__mobile_menu}`}>
                         <i className={`${styles.nav__mobile_menu_icon} icon-menu-line`}></i>
                     </span>
-                    <span className={styles.nav__all}>
+                    <span
+                        className={styles.nav__all}
+                        onClick={openCloseMenu}
+                    >
                         <i className={`${styles.nav__menu_icon} icon-menu-line`}></i>
                         Բոլոր տեսակները
                         <i className={`${styles.nav__open_icon} icon-down`}></i>
                     </span>
-                    <CategoriesMenu openMenu={openMenu} />
+                    <CategoriesMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
                 </div>
                 {
                     !showSearch && (

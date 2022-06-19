@@ -2,9 +2,9 @@ import cn from 'classnames';
 import Link from 'next/link';
 import styles from '../../styles/CategoriesMenu.module.scss';
 
-const CategoriesMenu = ({ openMenu, refProp }) => {
+const CategoriesMenu = ({ openMenu, setOpenMenu }) => {
     return (
-        <div className={cn(styles.menu__wrap, { [styles.opened]: openMenu })} ref={refProp}>
+        <div className={cn(styles.menu__wrap, { [styles.opened]: openMenu })}>
             <div className={styles.categories}>
                 <div className={styles.categories__top}>
                     <h3 className={styles.categories__title}>Կատեգորիա</h3>
