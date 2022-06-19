@@ -3,7 +3,11 @@
 .menu__wrap {
     position: absolute;
     top: 69px;
-    display: flex;
+    display: none;
+
+    &.opened {
+        display: flex;
+    }
 }
 
 .categories {

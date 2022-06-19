@@ -1,14 +1,28 @@
 import cn from 'classnames';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 import styles from '../../styles/Nav.module.scss';
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
+import useOutSideClick from '../../hooks/useOutsideClick';
 
 const Nav = ({ showSearch }) => {
+    const [openMenu, setOpenMenu] = useState(false);
+    const wrapperRef = useRef(null);
+
+    const openCloseMenu = () => {
+        setOpenMenu(!openMenu);
+    }
+
+    useOutSideClick(wrapperRef, openMenu, setOpenMenu);
 
     return (
         <>
             <nav className={styles.nav}>
-                <div className={styles.nav__main}>
+                <div
+                    className={styles.nav__main}
+                    onClick={openCloseMenu}
+                    ref={wrapperRef}
+                >
                     <span className={`${styles.nav__mobile_menu}`}>
                         <i className={`${styles.nav__mobile_menu_icon} icon-menu-line`}></i>
                     </span>
@@ -17,7 +31,7 @@ const Nav = ({ showSearch }) => {
                         Բոլոր տեսակները
                         <i className={`${styles.nav__open_icon} icon-down`}></i>
                     </span>
-                    <CategoriesMenu />
+                    <CategoriesMenu openMenu={openMenu} />
                 </div>
                 {
                     !showSearch && (
