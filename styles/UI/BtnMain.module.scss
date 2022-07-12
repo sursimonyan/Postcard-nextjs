@@ -1,0 +1,16 @@
+.btnmain {
+    min-width: 10rem;
+    height: 1.71875rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.5rem;
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+    border-radius: 0.125rem;
+    transition: background-color 240ms;
+
+    &:hover {
+        background-color: var(--dark-orange);
+    }
+}
