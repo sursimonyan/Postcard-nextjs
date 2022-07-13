@@ -1,0 +1,33 @@
+.shippingitem {
+    display: flex;
+    width: 13.625rem;
+    height: 4.0625rem;
+    box-shadow: var(--shadow);
+    border-radius: 0.3125rem;
+    overflow: hidden;
+
+    &__icon {
+        display: flex;
+        width: 5.3125rem;
+        font-size: 1.75rem;
+        color: var(--white);
+        background: linear-gradient(80deg, var(--orange) 88%, transparent 12%), url(http://lorempixel.com/800/600/city/2) left no-repeat;
+        background-size: 100% 100%, 100% auto;
+        
+        i {
+            margin: auto;
+        }
+    }
+
+    &__text_wrap {
+        display: flex;
+    }
+
+    &__text {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 0.625rem;
+        line-height: 0.875em;
+        color: var(--blue-dark);
+    }
+}
