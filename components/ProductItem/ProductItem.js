@@ -4,7 +4,7 @@ const ProductItem = () => {
     return (
         <div className={styles.productitem}>
             <div className={styles.productitem__top}>
-                <img src="/images/product-image.png" className={styles.productitem__img} alt="Product name" />
+                <img src="./images/product-image.png" className={styles.productitem__img} alt="Product name" />
                 <div className={styles.productitem__icons}>
                     <i className='icon-fav-alt'></i>
                     <i className='icon-basket'></i>

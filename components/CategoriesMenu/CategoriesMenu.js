@@ -132,7 +132,7 @@ const CategoriesMenu = ({ openMenu, setOpenMenu }) => {
                     <Link href="/">
                         <>
                             <div className={styles.submenu__image_wrap}>
-                                <img src="/images/category-image.png" alt="Category Name" />
+                                <img src="./images/category-image.png" alt="Category Name" />
                             </div>
                             <h4 className={styles.submenu__image_title}>ՆՈՐ ՏԵՍԱԿԱՆԻ</h4>
                         </>

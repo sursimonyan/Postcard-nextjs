@@ -1,0 +1,23 @@
+.btnsecond {
+    min-width: 6.25rem;
+    height: 1.4375rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.5rem;
+    color: var(--blue);
+    background-color: var(--white);
+    border: none;
+    border-radius: 0.71875rem;
+    transition: background-color 240ms;
+
+    &.morePromoBtn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+        background-color: var(--gray-light);
+    }
+}

@@ -1,41 +1,9 @@
-.slideritem {
+.mainbanner {
     position: relative;
     display: flex;
     height: 18.75rem;
     padding: 2.5625rem 0;
     background-color: var(--slider-blue);
-
-    &__arrow {
-        position: absolute;
-        top: 50%;
-        display: flex;
-        width: 2.1875rem;
-        height: 2.1875rem;
-        border-radius: 50%;
-        background-color: var(--white);
-        transform: translateY(-50%);
-        opacity: 0.75;
-        transition: opacity 240ms;
-        z-index: 9;
-        cursor: pointer;
-
-        i {
-            margin: auto;
-        }
-
-        &_left {
-            left: 1.875rem;
-            transform: rotateZ(180deg);
-        }
-
-        &_right {
-            right: 1.875rem;
-        }
-
-        &:hover {
-            opacity: 1;
-        }
-    }
 
     &__wrap {
         display: flex;

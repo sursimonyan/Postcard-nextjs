@@ -1,4 +1,4 @@
-import styles from '../../styles/UI/Btnmain.module.scss';
+import styles from '../../styles/UI/BtnMain.module.scss';
 
 const BtnMain = ({ btnTitle }) => {
     return (

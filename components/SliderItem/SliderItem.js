@@ -3,7 +3,7 @@ import BtnMain from '../UI/BtnMain';
 
 const SliderItem = () => {
     return (
-        <div className={styles.slideritem}>
+        <div className={styles.slideritem} style={{'backgroundImage': 'url(./images/slider-banner.jpg)'}}>
             <span className={`${styles.slideritem__arrow} ${styles.slideritem__arrow_left}`}>
                 <i className='icon-arrow-right'></i>
             </span>
@@ -12,14 +12,14 @@ const SliderItem = () => {
             </span>
             <div className={styles.slideritem__wrap}>
                 <div className={`${styles.slideritem__inner} container`}>
-                    <div className={styles.slideritem__text}>
+                    <div className={styles.slideritem__info}>
                         <h2 className={styles.slideritem__title}>NIke Men Running</h2>
                         <p className={styles.slideritem__desc}>Performance and design. Taken right to the edge.</p>
                         <BtnMain btnTitle={'Shop Now'} />
                     </div>
-                    <div className={styles.slideritem__image}>
+                    {/* <div className={styles.slideritem__image}>
                         <img src='./images/product-image.png' alt='product image' />
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className={styles.slideritem__bullets}>
