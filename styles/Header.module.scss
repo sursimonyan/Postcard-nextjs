@@ -3,6 +3,8 @@
 .header {
     position: sticky;
     top: 0;
+    background-color: var(--white);
+    z-index: 999;
 
     &__top {
         padding: 6px 0;

@@ -6,7 +6,6 @@ import SliderItem from '../components/SliderItem/SliderItem';
 import { useState } from 'react';
 import MainBanner from '../components/MainBanner/MainBanner';
 import MorePromo from '../components/MorePromo/MorePromo';
-import Brands from '../components/Brands/Brands';
 
 export default function Home() {
   const [activePromo, setActivePromo] = useState(true);
@@ -39,7 +38,6 @@ export default function Home() {
       <div className='container'>
         <MorePromo />
       </div>
-      <Brands />
     </div>
   )
 }
