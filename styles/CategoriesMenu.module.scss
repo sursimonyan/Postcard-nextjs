@@ -2,11 +2,22 @@
 
 .menu__wrap {
     position: absolute;
-    top: 69px;
+    top: 2.15625rem;
     display: none;
+    z-index: 9;
 
     &.opened {
         display: flex;
+    }
+
+    @include lg {
+        position: fixed;
+        top: 0;
+        left: 0;
+    } 
+
+    @include sm {
+
     }
 }
 
@@ -18,6 +29,10 @@
     border: 1px solid var(--gray-line);
     overflow-y: auto;
     z-index: 9;
+
+    @include lg {
+        max-height: 100vh;
+    }
 
     &__top {
         display: none;
@@ -42,6 +57,7 @@
     &__close {
         font-size: 14px;
         font-weight: 700;
+        cursor: pointer;
     }
 
     &__list {
@@ -184,6 +200,10 @@
     border: 1px solid var(--gray-line);
     overflow-y: auto;
     z-index: 9;
+
+    @include lg {
+        max-height: 100vh;
+    }
 
     &__categories {
         display: flex;

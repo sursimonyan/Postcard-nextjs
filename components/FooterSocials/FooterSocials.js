@@ -7,7 +7,7 @@ const FooterSocials = () => {
         <div className={styles.footerSocials}>
             {
                 footerSocial.map((social) => (
-                    <a href='#'>
+                    <a href='#' key={social}>
                         <i className={`${social} ${styles.footerSocials__social}`}></i>
                     </a>
                 ))

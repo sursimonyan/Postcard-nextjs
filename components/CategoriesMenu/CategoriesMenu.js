@@ -3,12 +3,21 @@ import Link from 'next/link';
 import styles from '../../styles/CategoriesMenu.module.scss';
 
 const CategoriesMenu = ({ openMenu, setOpenMenu }) => {
+
+    const closeMenu = () => {
+        setOpenMenu(false);
+        document.querySelector('body').style.overflowY = 'inherit';
+    }
+
     return (
         <div className={cn(styles.menu__wrap, { [styles.opened]: openMenu })}>
             <div className={styles.categories}>
                 <div className={styles.categories__top}>
                     <h3 className={styles.categories__title}>Կատեգորիա</h3>
-                    <i className={`${styles.categories__close} icon-close`}></i>
+                    <i
+                        className={`${styles.categories__close} icon-close`}
+                        onClick={closeMenu}
+                    ></i>
                 </div>
                 <div className={styles.categories__list}>
                     <span className={styles.categories__item}>

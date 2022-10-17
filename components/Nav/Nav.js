@@ -13,6 +13,11 @@ const Nav = ({ showSearch }) => {
         setOpenMenu(!openMenu);
     }
 
+    const openTabletMenu = () => {
+        document.querySelector('body').style.overflowY = 'hidden';
+        setOpenMenu(true);
+    }
+
     useOutSideClick(wrapperRef, openMenu, setOpenMenu);
 
     return (
@@ -22,7 +27,10 @@ const Nav = ({ showSearch }) => {
                     className={styles.nav__main}
                     ref={wrapperRef}
                 >
-                    <span className={`${styles.nav__mobile_menu}`}>
+                    <span
+                        className={`${styles.nav__mobile_menu}`}
+                        onClick={openTabletMenu}
+                    >
                         <i className={`${styles.nav__mobile_menu_icon} icon-menu-line`}></i>
                     </span>
                     <span
