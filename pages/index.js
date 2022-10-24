@@ -20,10 +20,12 @@ export default function Home() {
           <ShippingItem />
         </div>
         <div className={styles.products}>
-          <div className={styles.products__promo}>
-            <span className={cn(styles.products__promo_item, { [styles.active]: activePromo })}>Օրվա առաջարկ</span>
-            <span className={styles.products__promo_item}>Պահանջված տեսականի</span>
-            <span className={styles.products__promo_item}>Նոր տեսականի</span>
+          <div className={styles.products__promo_wrap}>
+            <div className={styles.products__promo}>
+              <span className={cn(styles.products__promo_item, { [styles.active]: activePromo })}>Օրվա առաջարկ</span>
+              <span className={styles.products__promo_item}>Պահանջված տեսականի</span>
+              <span className={styles.products__promo_item}>Նոր տեսականի</span>
+            </div>
           </div>
           <div className={styles.products__slider}>
             <ProductItem />

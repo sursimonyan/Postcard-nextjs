@@ -52,11 +52,20 @@
         right: -14px;
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 0.3125rem;
+        font-family: sans-serif;
+        font-size: 0.35rem;
         line-height: 1.5em;
         color: var(--white);
         background-color: var(--orange);
         border-radius: 8px;
+
+        @include lg {
+            font-size: 0.45rem;
+        }
+
+        @include sm {
+            font-size: 0.6rem;
+        }
     }
 
     @include lg {

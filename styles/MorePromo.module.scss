@@ -1,3 +1,5 @@
+@import './main-styles/mixins.scss';
+
 .morepromo {
     margin-block-start: 2.25rem;
 
@@ -13,11 +15,21 @@
     &__categories {
         display: flex;
         column-gap: 1.25rem;
+
+        @include sm {
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
     }
 
     &__item {
         max-width: 10.5625rem;
         width: 24%;
+
+        @include sm {
+            order: 1;
+            width: calc(50% - 0.5rem);
+        }
     }
 
     &__items {
@@ -26,13 +38,19 @@
         row-gap: 1.25rem;
         max-width: 19.1875rem;
         width: 45%;
+
+        @include sm {
+            order: 2;
+            max-width: initial;
+            width: 100%;
+        }
     }
 
     &__items_small {
         display: flex;
         align-items: center;
         column-gap: 1.25rem;
-    } 
+    }
 
     &__item,
     &__item_inner,
@@ -57,7 +75,7 @@
 
         &:hover {
             box-shadow: var(--shadow);
-            
+
             button {
                 opacity: 1;
             }

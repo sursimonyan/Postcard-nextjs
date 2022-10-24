@@ -19,16 +19,17 @@
 
     @include lg {
         top: 0;
+        height: 100vh;
+        background-color: rgba(15, 38, 65, 0.6);
     } 
 
     @include sm {
-
+        
     }
 }
 
 .categories {
     max-width: 375px;
-    width: 35%;
     max-height: 687px;
     padding-block-start: 20px;
     background-color: var(--white);
@@ -36,8 +37,22 @@
     overflow-y: auto;
     z-index: 9;
 
+    @include xl {
+        width: 35%;
+    }
+
     @include lg {
-        max-height: 100vh;
+        max-height: 100%;
+    }
+
+    @include md {
+        width: 48%;
+        min-width: 360px;
+    }
+
+    @include sm {
+        max-width: initial;
+        width: 100%;
     }
 
     &__top {
@@ -218,7 +233,11 @@
 
     @include lg {
         width: 70%;
-        max-height: 100vh;
+        max-height: 100%;
+    }
+
+    @include md {
+        display: none;
     }
 
     &__categories {

@@ -107,6 +107,10 @@
             width: calc(100% - 200px);
             height: 35px; 
         }
+
+        @include sm {
+            width: calc(100% - 50px);
+        }
     }
 
     &__input {

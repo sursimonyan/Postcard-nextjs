@@ -1,13 +1,27 @@
+@import './main-styles/mixins.scss';
+
 .shipping {
     display: flex;
     justify-content: space-between;
     column-gap: 1rem;
     margin-block-start: 3.375rem;
     margin-block-end: 2.125rem;
+
+    @include sm {
+        display: none;
+    }
 }
 
 .products {
     margin-block-end: 1.875rem;
+
+    &__promo_wrap {
+
+        @include sm {
+            display: flex;
+            overflow-x: auto;
+        }
+    }
 
     &__promo {
         display: flex;
@@ -25,7 +39,12 @@
         line-height: 1.4em;
         font-weight: 700;
         color: var(--gray-line);
+        text-align: center;
         cursor: pointer;
+
+        @include sm {
+            flex: 1 0 auto;
+        }
 
         &.active,
         &:hover {

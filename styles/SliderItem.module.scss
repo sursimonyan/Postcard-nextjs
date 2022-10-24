@@ -1,9 +1,16 @@
+@import './main-styles/mixins.scss';
+
 .slideritem {
     position: relative;
     display: flex;
     height: 18.75rem;
     padding: 2.5625rem 0;
     background-color: var(--slider-blue);
+    background-size: cover;
+
+    @include sm {
+        margin-block-end: 1.25rem;
+    }
 
     &__arrow {
         position: absolute;
