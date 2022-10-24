@@ -2,7 +2,7 @@
 
 .menu__wrap {
     position: absolute;
-    top: 2.15625rem;
+    top: 2.1rem;
     display: none;
     z-index: 9;
 
@@ -10,10 +10,15 @@
         display: flex;
     }
 
-    @include lg {
+    @include xl {
         position: fixed;
-        top: 0;
+        top: 3.8rem;
         left: 0;
+        width: 100%;
+    }
+
+    @include lg {
+        top: 0;
     } 
 
     @include sm {
@@ -23,6 +28,7 @@
 
 .categories {
     max-width: 375px;
+    width: 35%;
     max-height: 687px;
     padding-block-start: 20px;
     background-color: var(--white);
@@ -191,6 +197,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     max-width: 930px;
     column-gap: 0.5rem;
     width: 29.0625rem;
@@ -201,14 +208,22 @@
     overflow-y: auto;
     z-index: 9;
 
+    @include xxl {
+        width: 26rem;
+    }
+
+    @include xl {
+        width: 65%;
+    }
+
     @include lg {
+        width: 70%;
         max-height: 100vh;
     }
 
     &__categories {
         display: flex;
         flex-wrap: wrap;
-        ;
         column-gap: 0.6rem;
         width: 60%;
     }

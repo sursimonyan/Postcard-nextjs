@@ -9,7 +9,7 @@ const FooterMenuItem = ({ title, items }) => {
             <div className={styles.footerMenuItem__items_wrap}>
                 {
                     items && items.map((item) => (
-                        <Link href={item} key={item}>
+                        <Link href="/" key={item}>
                             <a className={styles.footerMenuItem__item}>{item}</a>
                         </Link>
                     ))

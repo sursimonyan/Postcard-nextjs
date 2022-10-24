@@ -92,7 +92,7 @@ const CategoriesMenu = ({ openMenu, setOpenMenu }) => {
                             <span className={`${styles.categories__lang_icon} icon-down`}></span>
                         </span>
                     </div>
-                    <Link href="/"><a className={styles.categories__link}>Մեր մասին</a></Link>
+                    {/* <Link href="/"><a className={styles.categories__link}>Մեր մասին</a></Link> */}
                     <Link href="/"><a className={styles.categories__link}>Վճարման մեթոդներ</a></Link>
                     <Link href="/"><a className={styles.categories__link}>Վճարման մեթոդներ</a></Link>
                     <span className={styles.categories__contact}>Contact info 055 45 45 45</span>

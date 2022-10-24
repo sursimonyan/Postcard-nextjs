@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import styles from '../../styles/Nav.module.scss';
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import useOutSideClick from '../../hooks/useOutsideClick';
