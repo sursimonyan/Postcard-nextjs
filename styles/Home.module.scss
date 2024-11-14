@@ -67,5 +67,7 @@
     &__slider {
         display: flex;
         column-gap: 0.9375rem;
+        padding-bottom: 1rem;
+        overflow-x: auto;
     }
 }
